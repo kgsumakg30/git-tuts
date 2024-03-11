@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index2.css">
+   
+</head>
+<body>
+<div class="div-Container">
+  <div class="center-div">
+    <h2 id="colochange" style="text-align: center;">Color Change</h2>
+    <img id="imgsrc" src="bulb.jpg" width="100%" ALT="">
+    <div class="button-Container">
+        <button onclick="changeSrc()"><span id="contentChange">ON</span></button>
+    </div>
+   
+  </div>  
+   
+</div>
+    
+   <script >
+
+    
+    var countNo=0
+    const changeSrc=()=>{
+if(countNo==0){
+    document.getElementById("colochange").style.color="red"
+    document.getElementById("imgsrc").src="bulbon.jpg"
+    document.getElementById("contentChange").innerHTML="OFF"
+    
+    countNo++
+}
+else{
+    document.getElementById("colochange").style.color="green"
+    document.getElementById("imgsrc").src="bulb.jpg"
+    document.getElementById("contentChange").innerHTML="ON"
+    countNo--
+}
+    }
+
+   </script> 
+</body>
+</html>

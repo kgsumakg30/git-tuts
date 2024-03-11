@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+display: flex;
+flex-direction: column;
+width: 300px;
+padding:20px;
+margin: 5px 0px;
+border: 1px solid pink;
+border-radius: 5px;
+        }
+
+        input{
+            padding: 0px 10px;
+            height:35px;
+            margin:5px 0px;
+            border-radius: 10px;
+
+        }
+        button{
+            background-color: pink;
+            border: 1px solid red;
+            margin:5px 0px;
+            height:30px;
+            border-radius: 10px;
+        color: white;
+        }
+        button:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <form action="" id="myForm">
+            <div class="container">
+
+                <input id="inputData" type="email"  placeholder="email"><br><span id="Err1" style="color: red;"></span>
+   <input id="inputData2" type="password" placeholder="password"> <br><span id="Err2" style="color: red;"></span><br>
+   <button type="submit" >LOGIN</button>
+            </div>
+        
+</form>
+    </div>
+   
+
+    <script>
+document.getElementById("myForm").addEventListener("submit",(e)=>{
+    e.preventDefault()
+
+    console.log("form submitted succefuuly");
+    const enterData=document.getElementById("inputData").value
+     console.log(enterData);
+     const enterData2=document.getElementById("inputData2").value
+     console.log(enterData2);
+
+     if(enterData==""){
+document.getElementById("Err1").innerHTML="Please Enter E-mail"
+document.getElementById("inputData").style.border="1px solid red"
+     }
+     if(enterData2==""){
+document.getElementById("Err2").innerHTML="Please Enter strong password"
+document.getElementById("inputData2").style.border="1px solid red"
+     }
+})
+
+
+
+
+
+
+    </script>
+</body>
+</html>
