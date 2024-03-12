@@ -31,15 +31,22 @@ text-align: center;
 
 
 
+
+
 @media only screen and (max-width: 640px){
     .devicewidth2 {width:320px !important;}
-    body{ background-color: blue;}
+    
     .bu{
         background-color:red;  
         width:90% ;
         height: 5vh;
         font-size: 10px;
        
+       }
+       .mob{
+        display: block !important;
+        width:100% !important;
+        padding-bottom: 10px;
        }
     }
    
