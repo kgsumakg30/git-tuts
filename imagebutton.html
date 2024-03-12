@@ -11,7 +11,7 @@
 <div class="div-Container">
   <div class="center-div">
     <h2 id="colochange" style="text-align: center;">Color Change</h2>
-    <img id="imgsrc" src="bulb.jpg" width="100%" ALT="">
+    <img id="imgsrc" src="offbulb.png" width="100%" ALT="">
     <div class="button-Container">
         <button onclick="changeSrc()"><span id="contentChange">ON</span></button>
     </div>
@@ -27,14 +27,14 @@
     const changeSrc=()=>{
 if(countNo==0){
     document.getElementById("colochange").style.color="red"
-    document.getElementById("imgsrc").src="bulbon.jpg"
+    document.getElementById("imgsrc").src="onbulb.png"
     document.getElementById("contentChange").innerHTML="OFF"
     
     countNo++
 }
 else{
     document.getElementById("colochange").style.color="green"
-    document.getElementById("imgsrc").src="bulb.jpg"
+    document.getElementById("imgsrc").src="offbulb.png"
     document.getElementById("contentChange").innerHTML="ON"
     countNo--
 }
